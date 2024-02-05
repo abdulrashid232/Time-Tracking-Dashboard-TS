@@ -2,7 +2,7 @@ export const daily = document.querySelector(".daily") as HTMLElement;
 export const weekly = document.querySelector(".weekly") as HTMLElement;
 export const monthly = document.querySelector(".monthly") as HTMLElement;
 
-// import { jsonData } from "./script.ts";
+import { jsonData } from "./main.ts";
 
 export function DailyFunction(): void {
   daily.classList.add('active');

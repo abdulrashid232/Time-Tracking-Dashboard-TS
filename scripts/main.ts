@@ -1,7 +1,7 @@
-// import { generateActivitiesHTML } from "./card.ts";
+import { generateActivitiesHTML } from "./card.ts";
 import { DailyFunction, WeeklyFunction, MonthlyFunction, daily, weekly, monthly } from "./function_Utils.ts";
 
-let jsonData: any;
+export let jsonData: any;
 
 fetch('data.json')
   .then((response: Response) => {
