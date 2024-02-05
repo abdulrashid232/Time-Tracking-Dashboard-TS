@@ -1,15 +1,15 @@
 interface Timeframes {
   daily: {
-    current: string;
-    previous: string;
+    current: number;
+    previous: number;
   };
   weekly: {
-    current: string;
-    previous: string;
+    current: number;
+    previous: number;
   };
   monthly: {
-    current: string;
-    previous: string;
+    current: number;
+    previous: number;
   };
 }
 
