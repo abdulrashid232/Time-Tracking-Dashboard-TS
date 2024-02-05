@@ -1,5 +1,6 @@
 export function generateActivitiesHTML(data) {
     let mainActivitiesGrip = document.querySelector(".main-activities-grip");
+    
     data.forEach((item) => {
         let mainActivity = document.createElement("div");
         mainActivity.classList.add("main-activity", item.title.toLowerCase().replace(/\s+/g, '-'));

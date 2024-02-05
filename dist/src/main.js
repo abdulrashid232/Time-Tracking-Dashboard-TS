@@ -1,6 +1,8 @@
 import { generateActivitiesHTML } from "./card.js";
 import { DailyFunction, WeeklyFunction, MonthlyFunction, daily, weekly, monthly } from "./function_Utils.js";
+
 export let jsonData;
+
 fetch('data.json')
     .then((response) => {
     if (!response.ok) {
