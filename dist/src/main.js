@@ -1,8 +1,6 @@
 import { generateActivitiesHTML } from "./card.js";
 import { DailyFunction, WeeklyFunction, MonthlyFunction, daily, weekly, monthly } from "./function_Utils.js";
-
 export let jsonData;
-
 fetch('data.json')
     .then((response) => {
     if (!response.ok) {
@@ -13,6 +11,7 @@ fetch('data.json')
     .then((data) => {
     jsonData = data;
     generateActivitiesHTML(jsonData);
+    window.onload = DailyFunction();
     daily.addEventListener('click', DailyFunction);
     weekly.addEventListener('click', WeeklyFunction);
     monthly.addEventListener('click', MonthlyFunction);

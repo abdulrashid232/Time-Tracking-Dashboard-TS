@@ -13,6 +13,7 @@ fetch('data.json')
   .then((data: Activity[]) => {
     jsonData = data;
     generateActivitiesHTML(jsonData);
+    window.onload = DailyFunction;
     daily.addEventListener('click', DailyFunction);
     weekly.addEventListener('click', WeeklyFunction);
     monthly.addEventListener('click', MonthlyFunction);

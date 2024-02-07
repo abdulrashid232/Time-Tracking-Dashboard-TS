@@ -1,10 +1,7 @@
 import { jsonData } from "./main.js";
-
 export let daily = document.querySelector(".daily");
 export let weekly = document.querySelector(".weekly");
 export let monthly = document.querySelector(".monthly");
-
-
 export function DailyFunction() {
     daily.classList.add('active');
     monthly.classList.remove('active');
@@ -15,8 +12,6 @@ export function DailyFunction() {
           <p>${'Yesterday - ' + item.timeframes.daily.previous + 'hrs'} </p>`;
     });
 }
-
-
 export function WeeklyFunction() {
     daily.classList.remove('active');
     monthly.classList.remove('active');
@@ -27,8 +22,6 @@ export function WeeklyFunction() {
           <p>${'Last Week - ' + item.timeframes.weekly.previous + 'hrs'} </p>`;
     });
 }
-
-
 export function MonthlyFunction() {
     daily.classList.remove('active');
     monthly.classList.add('active');
